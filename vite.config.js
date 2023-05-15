@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: resolve(__dirname, 'dist'),
     sourcemap: true,
     lib: {
-      entry: resolve(__dirname, 'src/index.js'),
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'LayoutComposer',
       formats: ['iife', 'es'],
       fileName: (format) => {
