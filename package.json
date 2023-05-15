@@ -2,7 +2,12 @@
   "name": "layout-composer",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "files": [
+    "dist",
+    "types.d.ts"
+  ],
+  "typings": "types.d.ts",
+  "main": "dist/index.js",
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
