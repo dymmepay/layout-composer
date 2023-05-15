@@ -23,10 +23,13 @@ const composer = init([
 
 // Or create one at any time
 composer.defineComposer('Button', 'btn', (src: string) => `<button>${src}</button>`);
+
+// Use it
+composer.render(['text', 'img:https://example.com/image.png', 'btn:click me!'])
 ```
 
 ## Version
-1.0.0
+1.0.1
 
 ## License
 MIT
