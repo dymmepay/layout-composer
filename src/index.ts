@@ -43,5 +43,13 @@ export function init(composers: Composers = DEFAULT_COMPOSERS) {
   return {
     render,
     composers,
+    defineComposer(name: string, key: string, fn: ComposerFunction) {
+      let composerExists = composers.find((composer) => composer.key === key) !== undefined
+      if (composerExists) {
+        throw new Error(`Composer already exists: ${key}`)
+      }
+
+      composers.push({ name, key, fn })
+    }
   }
 }
