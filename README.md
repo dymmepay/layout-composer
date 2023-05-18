@@ -7,7 +7,7 @@ This tool helps us to ship faster and to focus on the content rather than the la
 
 ## Installation
 ```bash
-npm install @dymme/layout-composer
+npm install layout-composer
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ composer.render(['text', 'img:https://example.com/image.png', 'btn:click me!'])
 ```
 
 ## Version
-1.0.1
+1.0.2
 
 ## License
 MIT
