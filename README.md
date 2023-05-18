@@ -16,9 +16,11 @@ import { init } from '@dymme/layout-composer';
 
 // Add your own composers at init or use the default ones
 const composer = init([
-  name: 'Button',
-  key: 'btn',
-  fn: (src: string) => `<button>${src}</button>`
+  {
+    name: 'Button',
+    key: 'btn',
+    fn: (src: string) => `<button>${src}</button>`
+  }
 ]);
 
 // Or create one at any time

@@ -10,7 +10,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'LayoutComposer',
-      formats: ['iife', 'es'],
+      formats: ['iife', 'es', 'cjs'],
       fileName: (format) => {
         if (format === 'es') {
           return 'index.js'

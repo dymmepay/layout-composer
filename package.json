@@ -6,7 +6,7 @@
     "types.d.ts"
   ],
   "typings": "types.d.ts",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
